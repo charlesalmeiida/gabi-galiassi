@@ -1,0 +1,98 @@
+.btn-primary {
+  width: 100%;
+  max-width: 34.1rem;
+  padding: 1.6rem 2.4rem;
+  border-radius: 1rem;
+  background: $gray-01;
+  color: $gray-04;
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.92rem;
+  transition: all 0.3s ease;
+  span {
+    margin-right: 0.8rem;
+  }
+  transition: all 0.3s ease;
+  &:hover {
+    background: $gradient;
+    color: $gray-01;
+  }
+}
+
+.btn-secondary {
+  width: 100%;
+  max-width: 34.1rem;
+  padding: 1.6rem 2.4rem;
+  border-radius: 1rem;
+  background: $gradient;
+  color: $gray-04;
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.92rem;
+  color: $gray-01;
+  transition: all 0.3s ease;
+  span {
+    margin-right: 0.8rem;
+  }
+  transition: all 0.3s ease;
+  &:hover {
+    background: $gray-01;
+    color: $gray-04;
+  }
+}
+
+.faq {
+  .item-faq {
+    button {
+      max-width: 86.4rem;
+      @include flexSpaceBetween;
+      padding: 2.4rem 3.2rem 2.4rem 2.4rem;
+      width: 100%;
+      border: 1px solid $pink-01;
+      border-radius: 1rem;
+      transition: all 0.3s;
+      .icon-arrow-down {
+        padding: 0.8rem 0.6rem;
+        border-radius: 50%;
+        background-color: $gray-04;
+        img {
+          transition: all 0.3s;
+        }
+      }
+      color: $gray-01;
+      font-family: "Inter", sans-serif;
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 1.92rem;
+    }
+    p {
+      max-width: 92.4rem;
+      padding: 3.2rem;
+      background-color: $pink-03;
+      border-radius: 1rem;
+      display: none;
+      animation: fadeIn 0.3s forwards;
+    }
+    &.active {
+      p {
+        display: block;
+      }
+      img {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
