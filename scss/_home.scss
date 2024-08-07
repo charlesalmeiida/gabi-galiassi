@@ -21,7 +21,7 @@
           width: 100%;
           max-width: 50.821rem;
           height: 1.8rem;
-          bottom: 0.5rem;
+          bottom: 0;
           left: 3.2rem;
           z-index: -1;
         }
@@ -170,5 +170,108 @@
       @include flex(row, center, center);
       gap: 1.4rem;
     }
+  }
+}
+
+.s-entregaveis {
+  padding-bottom: 12rem;
+  .container {
+    .top {
+      text-align: center;
+      strong {
+        color: $pink-01;
+        font-family: "Asap", sans-serif;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 3rem;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          max-width: 13.8rem;
+          height: 0.8rem;
+          bottom: 0;
+          left: 0;
+          z-index: -1;
+          background: url(../assets/svg/line-text-green.svg);
+        }
+      }
+    }
+    .swiper-pagination {
+      position: relative;
+      margin-top: 5.6rem;
+      transition: all 0.3s ease;
+      .swiper-pagination-bullet {
+        background-color: $pink-01;
+        width: 2.4rem;
+        height: 2px;
+        border-radius: 0;
+      }
+    }
+    .contents {
+      margin-top: 5.2rem;
+    }
+  }
+}
+
+.s-garantia {
+  padding-bottom: 12rem;
+  .container {
+    border-radius: 10px;
+    background-color: hsla(193, 100%, 95%, 0.5);
+    padding: 5.4rem 0;
+    h2 {
+      color: $gray-01;
+      font-size: 3.6rem;
+      font-weight: 700;
+      line-height: 54px;
+      text-decoration-line: underline;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    p {
+      color: $gray-01;
+      text-align: center;
+      font-family: "Inter", sans-serif;
+      font-size: 2rem;
+      line-height: 150%;
+      max-width: 78.7rem;
+      margin: 3.2rem auto 4rem;
+    }
+    a {
+      margin: 0 auto;
+    }
+  }
+}
+
+.s-faq {
+  padding-bottom: 12rem;
+  .top {
+    text-align: center;
+    strong {
+      color: $pink-01;
+      font-family: "Asap", sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 3rem;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        max-width: 13.8rem;
+        height: 0.8rem;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        background: url(../assets/svg/line-text-green.svg);
+      }
+    }
+  }
+  .faq {
+    margin-top: 4rem;
+    @include flex(column, center, center);
+    gap: 1.6rem;
   }
 }

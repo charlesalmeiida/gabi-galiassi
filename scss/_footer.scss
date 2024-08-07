@@ -1,0 +1,40 @@
+footer {
+  overflow: hidden;
+  padding: 8rem 0 1.2rem;
+  background-color: $pink-01;
+  .container {
+    margin-bottom: 4.7rem;
+    @include flexSpaceBetween;
+    span {
+      color: $gray-04;
+      font-size: 16px;
+      line-height: 1.92rem;
+    }
+  }
+  span {
+    color: $gray-04;
+    font-size: 1.4rem;
+    line-height: 1.92rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+    a {
+      color: $gray-04;
+      text-decoration: underline;
+    }
+  }
+  @include responsivo("tablet") {
+    .container {
+      flex-direction: column;
+      gap: 4rem;
+      .right {
+        span {
+          text-align: center;
+        }
+      }
+    }
+  }
+  @include responsivo("mobile") {
+    padding-top: 3.2rem;
+  }
+}

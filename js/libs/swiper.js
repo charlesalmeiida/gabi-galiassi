@@ -9,7 +9,7 @@ var swiper = new Swiper(".mySwiper", {
 
 var swiper = new Swiper(".contents", {
   slidesPerView: 4.3,
-  spaceBetween: 30,
+  spaceBetween: 32,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
