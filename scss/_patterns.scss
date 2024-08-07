@@ -10,6 +10,7 @@
   font-weight: 400;
   line-height: 1.92rem;
   transition: all 0.3s ease;
+  text-align: center;
   span {
     margin-right: 0.8rem;
   }
@@ -17,6 +18,10 @@
   &:hover {
     background: $gradient;
     color: $gray-01;
+  }
+  @include responsivo("mobile") {
+    padding: 1.6rem 1.6rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -46,9 +51,10 @@
 .faq {
   .item-faq {
     width: 100%;
-    max-width: 86.4rem;
     button {
       @include flexSpaceBetween;
+      max-width: 86.4rem;
+      margin: 0 auto;
       padding: 2.4rem 3.2rem 2.4rem 2.4rem;
       width: 100%;
       border: 1px solid $pink-01;
@@ -62,13 +68,18 @@
           transition: all 0.3s;
         }
       }
-      color: $gray-01;
-      font-family: "Inter", sans-serif;
-      font-size: 1.6rem;
-      font-weight: 500;
-      line-height: 1.92rem;
+      span {
+        color: $gray-01;
+        font-family: "Inter", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 1.92rem;
+        opacity: 0.8;
+        flex: 1;
+      }
     }
     p {
+      max-width: 92rem;
       margin: 0 auto;
       padding: 3.2rem;
       background-color: $pink-03;
@@ -82,6 +93,15 @@
       }
       img {
         transform: rotate(180deg);
+      }
+    }
+  }
+  @include responsivo("mobile") {
+    .item-faq {
+      button {
+        span {
+          max-width: 34rem;
+        }
       }
     }
   }
@@ -117,7 +137,7 @@
 }
 
 .content-class {
-  background-color: $green-03;
+  background-color: hsla(193, 100%, 95%, 0.4);
   max-width: 28rem;
   width: 100%;
   height: 40.4rem;

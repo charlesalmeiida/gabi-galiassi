@@ -39,14 +39,57 @@
       margin-top: 2.1rem;
     }
   }
-}
-
-@keyframes drawLine {
-  from {
-    width: 0;
+  @include responsivo("laptop") {
+    .container {
+      .left-content {
+        h1 {
+          &::after {
+            max-width: 34.821rem;
+          }
+        }
+        p {
+          font-size: 2rem;
+        }
+      }
+    }
   }
-  to {
-    width: 100%;
+  @include responsivo("tablet") {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 3.2rem;
+      .left-content {
+        h1 {
+          &::after {
+            left: 10.2rem;
+            max-width: 34.6rem;
+          }
+        }
+        .logo {
+          margin: 0 auto;
+        }
+        .btn-primary {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  @include responsivo("mobile") {
+    .container {
+      .left-content {
+        h1 {
+          &::after {
+            display: none;
+            max-width: 3.2rem;
+            margin: 0 auto;
+          }
+        }
+        p {
+          font-size: 1.6rem;
+        }
+      }
+    }
   }
 }
 
@@ -105,6 +148,34 @@
   .btn-primary {
     margin: 0 auto;
   }
+  @include responsivo("laptop") {
+    margin: -5rem auto;
+    padding: 8rem 1.6rem;
+    .top {
+      .right-content {
+        .items-method {
+          .item-method {
+            p {
+              max-width: 24rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include responsivo("tablet") {
+    .top {
+      flex-direction: column;
+      gap: 4rem;
+      .left-content {
+        text-align: center;
+        margin: 0 auto;
+      }
+      .right-content {
+        margin: 0 auto;
+      }
+    }
+  }
 }
 
 .s-expert {
@@ -144,6 +215,22 @@
       }
     }
   }
+  @include responsivo("tablet") {
+    .container {
+      flex-direction: column;
+      gap: 4rem;
+      .left-content {
+        margin: 0 auto;
+        text-align: center;
+        .item-curriculum {
+          text-align: left;
+        }
+      }
+      .right-content {
+        margin: 0 auto;
+      }
+    }
+  }
 }
 
 .s-versus {
@@ -169,6 +256,12 @@
       -webkit-text-fill-color: transparent;
     }
   }
+  @include responsivo("tablet") {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 }
 
 .s-testimonials {
@@ -179,6 +272,21 @@
     .btns {
       @include flex(row, center, center);
       gap: 1.4rem;
+    }
+  }
+  @include responsivo("tablet") {
+    .top {
+      flex-direction: column;
+      align-items: center;
+      gap: 3.2rem;
+      text-align: center;
+      .text {
+        span.tag {
+          &::after {
+            left: 10rem;
+          }
+        }
+      }
     }
   }
 }
@@ -253,6 +361,11 @@
       margin: 0 auto;
     }
   }
+  @include responsivo("tablet") {
+    .container {
+      padding: 3.2rem 1.6rem;
+    }
+  }
 }
 
 .s-faq {
@@ -283,5 +396,42 @@
     margin-top: 4rem;
     @include flex(column, center, center);
     gap: 1.6rem;
+  }
+  @include responsivo("tablet") {
+    .container {
+      .faq {
+        .item-faq {
+          button {
+            max-width: 90%;
+          }
+          p {
+            max-width: 90%;
+          }
+        }
+      }
+    }
+  }
+  @include responsivo("mobile") {
+    .container {
+      .faq {
+        .item-faq {
+          button {
+            max-width: 85%;
+          }
+          p {
+            max-width: 85%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes drawLine {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
   }
 }
