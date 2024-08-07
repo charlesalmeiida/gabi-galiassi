@@ -24,6 +24,7 @@
           bottom: 0;
           left: 3.2rem;
           z-index: -1;
+          animation: drawLine 1s 0.5s ease-in forwards;
         }
       }
       p {
@@ -37,6 +38,15 @@
     .right {
       margin-top: 2.1rem;
     }
+  }
+}
+
+@keyframes drawLine {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
   }
 }
 

@@ -5,6 +5,10 @@ var swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  navigation: {
+    nextEl: ".btn-next",
+    prevEl: ".btn-prev",
+  },
 })
 
 var swiper = new Swiper(".contents", {

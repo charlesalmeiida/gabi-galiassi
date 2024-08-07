@@ -5,3 +5,4 @@ buttonFaq.forEach((btn) => {
     btn.parentElement.classList.toggle("active")
   })
 })
+
