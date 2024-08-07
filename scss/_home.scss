@@ -1,4 +1,5 @@
 .s-hero {
+  overflow: hidden;
   background: url(../assets/svg/bg-hero.svg) no-repeat center center;
   background-size: cover;
   padding: 80px 0 0 0;
@@ -94,6 +95,7 @@
 }
 
 .s-metodo-galiassi {
+  overflow: hidden;
   padding: 8rem 0 8rem 7.2rem;
   background-color: $gray-04;
   border-radius: 1rem;
@@ -179,6 +181,7 @@
 }
 
 .s-expert {
+  overflow: hidden;
   padding: 12rem 0;
   .container {
     @include flex(row, flex-start, space-evenly);
@@ -235,6 +238,7 @@
 
 .s-versus {
   padding-bottom: 8rem;
+  overflow: hidden;
   .container {
     @include flex(row, flex-start, space-between);
     p {
@@ -265,6 +269,7 @@
 }
 
 .s-testimonials {
+  overflow: hidden;
   padding-bottom: 12rem;
   .top {
     @include flexSpaceBetween;
@@ -292,6 +297,7 @@
 }
 
 .s-entregaveis {
+  overflow: hidden;
   padding-bottom: 12rem;
   .container {
     .top {
@@ -334,6 +340,7 @@
 }
 
 .s-garantia {
+  overflow: hidden;
   padding-bottom: 12rem;
   .container {
     border-radius: 10px;
@@ -370,6 +377,7 @@
 
 .s-faq {
   padding-bottom: 12rem;
+  overflow: hidden;
   .top {
     text-align: center;
     strong {
